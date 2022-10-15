@@ -1,0 +1,150 @@
+body img {
+    width: 100%;
+}
+
+.contentArea h3 {
+    position: relative;
+}
+
+/* .contentArea h3::before {
+    content: '';
+    width: 7.5px;
+    height: 7.5px;
+    position: absolute;
+    background-color: #da291c;
+    border-radius: 50%;
+    right: 17%;
+    bottom: 100%;
+} */
+
+
+
+.mainSection1 {
+    padding: 15% 4%;
+}
+
+.mainSection1 img {
+    margin-bottom: 20px;
+}
+
+.mainSection1 p:nth-of-type(1) {
+    color: #003661;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.mainSection1 p:nth-of-type(2) {
+    font-size: 0.8em;
+    line-height: 2em;
+    text-align: justify;
+    letter-spacing: -1.75px;
+    word-break: keep-all;
+}
+
+.mainSection2 {
+    padding: 15% 4%;
+}
+
+.mainSection2 h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.31em;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+.mainSection2 img {
+    margin-bottom: 20px;
+}
+
+.mainSection2 p:nth-of-type(1) {
+    color: #003661;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.mainSection2 p:nth-of-type(2) {
+    font-size: 0.8em;
+    line-height: 2em;
+    text-align: justify;
+    letter-spacing: -.8px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: flex-end;
+    background-size: 20%;
+    background-position: center;
+    background-position-x: 54%;
+    background-position-y: 10%;
+}
+
+.swiper-slide dt {
+    font-weight: bold;
+    color: #da291c;
+    margin: 10px 0;
+}
+
+.swiper-slide dd {
+    margin-bottom: 30px;
+}
+
+.swiper-slide:nth-of-type(1) {
+    background: url(../images/content1/contractx2.png)0 0 no-repeat;
+    background-size: 20%;
+    background-position: center;
+    background-position-y: 0;
+    background-position-x: 54%;
+
+}
+
+.swiper-wrapper {
+    height: 170px;
+}
+
+.swiper-slide:nth-of-type(2) {
+    background: url(../images/content1/annualx2.png)0 0 no-repeat;
+    background-position: center;
+    background-position-y: 5%;
+    background-size: 20%;
+}
+
+.swiper-slide:nth-of-type(3) {
+    background: url(../images/content1/documentx2.png)0 0 no-repeat;
+    background-position: center;
+    background-position-y: 5%;
+    background-position-x: 51%;
+    background-size: 20%;
+}
+
+.swiper-slide:nth-of-type(4) {
+    background: url(../images/content1/annualx2.png)0 0 no-repeat;
+    background-position: center;
+    background-position-y: 10%;
+    background-position-x: 51%;
+    background-size: 20%;
+}
+
+.swiper-slide:nth-of-type(5) {
+    background: url(../images/content1/phone-callx2.png)0 0 no-repeat;
+    background-position: center;
+    background-position-y: 10%;
+    background-size: 20%;
+}

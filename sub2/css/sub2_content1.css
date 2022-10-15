@@ -1,0 +1,191 @@
+body img {
+    width: 100%;
+}
+
+
+
+#section1 {
+    padding: 15% 4%;
+}
+
+/* 탭 메뉴 */
+
+.contentArea .intro p {
+    font-weight: bold;
+}
+
+.contlist {
+    display: none;
+}
+
+.tab_menu {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    line-height: 3.2em;
+}
+
+.tab_menu li {
+    width: 33.3%;
+}
+
+.tab_menu li a {
+    position: relative;
+    display: block;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    text-align: center;
+    font-weight: 600;
+    transition: all .3s;
+    height: 50px;
+}
+
+
+
+
+
+
+#section1 dl dd:nth-of-type(1) {
+    padding: 3%;
+
+}
+
+#section1 dl dt {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 20px 0 10px 10px;
+}
+
+#section1 img {
+    box-shadow: 2px 10px 15px 0 rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+
+#section1 dl {
+    height: 100%;
+    background-color: #348967;
+    color: #fff;
+    border-radius: 20px;
+    word-break: keep-all;
+}
+
+
+#section1 dl dd:nth-of-type(2) {
+    line-height: 2em;
+    letter-spacing: -1px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#section1 dl dd:nth-of-type(3) {
+    line-height: 2em;
+    letter-spacing: -1px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#section1 dl:last-child {
+    padding-bottom: 50px;
+}
+
+
+
+#section2 {
+    padding: 15% 4%;
+
+}
+
+#section2 h3 {
+    z-index: 10;
+    position: relative;
+    color: #fff;
+    bottom: -40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#section2 dl:nth-of-type(1) dt {
+    padding-top: 100px;
+}
+
+#section2 dl dd:nth-of-type(1) {
+    padding: 3%;
+    line-height: 2em;
+}
+
+#section2 dl dt {
+    padding: 20px 0 10px 10px;
+}
+
+#section2 dl dt i {
+    font-size: 6em;
+}
+
+#section2 img {
+    box-shadow: 2px 10px 15px 0 rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+
+#section2 div {
+    word-break: keep-all;
+}
+
+#section2 dl {
+    background-color: #35ab85;
+    color: #fff;
+    text-align: center;
+}
+
+#section2 div {
+    border-radius: 20px;
+}
+
+#section2 dl:last-child {
+    padding-bottom: 50px;
+    border-radius: 0 0 0 100px;
+}
+
+#section2 dl:nth-child(1) {
+    border-radius: 0 100px 0 0;
+}
+
+
+#section3 {
+    overflow: hidden;
+    padding: 15% 0;
+}
+
+#section3 .bgimg {
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/content1/skill@x2.jpg)0 0 no-repeat;
+}
+
+#section3 h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    color: #fff;
+}
+
+#section3 ul {
+    text-align: justify;
+    color: #fff;
+    font-size: 0.95em;
+    line-height: 1.7em;
+    letter-spacing: -1px;
+    padding: 20px 35px;
+}
+
+#section3 ul li {
+    list-style-type: disc;
+    margin-bottom: 13px;
+    word-break: keep-all;
+}

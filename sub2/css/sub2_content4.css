@@ -1,0 +1,92 @@
+body img {
+    width: 100%;
+}
+
+.intro {
+    padding: 0 4%;
+}
+
+.intro p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.intro p:nth-of-type(2) {
+    line-height: 2em;
+}
+
+
+.con h3 {
+    color: #003361;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 14% 0;
+    line-height: 1em;
+}
+
+.con dl {
+    text-align: justify;
+    line-height: 2em;
+    padding: 0 5%;
+    letter-spacing: -1px;
+}
+
+.con dl dt {
+    font-size: 0.98em;
+    color: #999;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.con dl dd {
+    letter-spacing: -2px;
+    margin-bottom: 200px;
+    line-height: 2.3em;
+}
+
+#footerArea {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

@@ -1,0 +1,111 @@
+.intro p {
+    line-height: 2em;
+}
+
+.intro {
+    padding: 0 4%;
+}
+
+/* 탭 메뉴 */
+.contlist {
+    display: none;
+}
+
+.tab_menu {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    line-height: 3.2em;
+}
+
+.tab_menu li {
+    width: 33.3%;
+}
+
+.tab_menu li a {
+    position: relative;
+    display: block;
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    text-align: center;
+    font-weight: 600;
+    transition: all .3s;
+    height: 50px;
+}
+
+
+/* 섹션1 */
+#section1 {
+    margin: 20% 0;
+}
+
+#section1 .bgimg1 {
+    background: url(../images/content2/main.1@x2.jpg)0 0 no-repeat;
+    background-position-x: -91px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+/* 섹션2 */
+
+#section2 {
+    margin: 20% 0;
+}
+
+#section2 .bgimg2 {
+    background: url(../images/content2/main.2@x2.jpg)0 0 no-repeat;
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+/* 섹션3 */
+
+#section3 {
+    margin: 20% 0;
+}
+
+#section3 .bgimg3 {
+    background: url(../images/content2/main.3@x2.jpg)0 0 no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-position-x: -195px;
+}
+
+
+
+
+
+.contentArea .con {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    width: calc(100% - 76px);
+    height: auto;
+    min-height: 400px;
+    color: #fff;
+    right: 0;
+    top: -41px;
+    text-align: justify;
+    letter-spacing: -1.1px;
+}
+
+.contentArea .con h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 16% 0 0 10%;
+
+}
+
+.contentArea .con p {
+    padding: 5% 0 5% 10%;
+    padding-right: 20%;
+    line-height: 2em;
+}
