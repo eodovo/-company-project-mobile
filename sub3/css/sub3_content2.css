@@ -1,0 +1,77 @@
+body img {
+    width: 100%;
+}
+
+.intro {
+    padding: 0 4%;
+}
+
+.intro p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.intro p:nth-of-type(2) {
+    line-height: 2em;
+}
+
+.item {
+    margin: 20% 0;
+
+}
+
+.item .con h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15%;
+
+}
+
+.item .con {
+    background: url(../images/content2/main@x2.jpg)no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 4%;
+
+}
+
+.item dl {
+    margin-bottom: 30px;
+}
+
+.item dl dt {
+    padding: 3%;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+
+.con dl dd:nth-of-type(1) {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    margin: 30px auto;
+    margin-top: -16px;
+}
+
+.con dl dd:nth-of-type(2) {
+    line-height: 2em;
+    letter-spacing: -1.1px;
+    font-size: 0.96em;
+    word-break: keep-all;
+}
+
+.con dl dd:nth-of-type(3) {
+    line-height: 2em;
+    letter-spacing: -1.2px;
+    font-size: 0.96em;
+    word-break: keep-all
+}
+
+.con dl:last-child {
+    margin-bottom: 100px;
+}

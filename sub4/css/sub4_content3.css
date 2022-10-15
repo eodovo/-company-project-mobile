@@ -1,0 +1,122 @@
+.hgroup {
+    position: relative;
+}
+
+.hgroup .all {
+    position: absolute;
+    right: 0.1em;
+    font-size: 2.2em;
+    bottom: -1.5em;
+    color: #003361;
+}
+
+
+.slide .q {
+    border-top: 1px solid #003366;
+    font-size: 0.98em;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+}
+
+.slide #top {
+    border-top: 3px solid #003366;
+}
+
+.slide .q a.trigger {
+    display: block;
+    padding: 15px 40px 15px 0px;
+    color: #333;
+}
+
+.slide .hide .q a.trigger {
+    background: none;
+    transition: all .3s;
+}
+
+.slide .q a.trigger:active,
+.slide .q a.trigger:focus {
+    color: #333
+}
+
+.slide .a {
+    max-width: 950px;
+    line-height: 2em;
+    text-align: left;
+    padding: 15px 40px 15px 54px;
+    border-top: 1px dotted #bbb;
+    display: none;
+    overflow: hidden;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+
+.hidden {
+    display: block;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.slide ul {
+    margin: 20% 0;
+}
+
+.slide ul li p {
+    padding-left: 55px;
+    position: relative;
+    word-break: keep-all;
+}
+
+.slide ul li p:nth-of-type(2) {
+    background-color: #f8f8f8;
+}
+
+.slide ul li .q::after {
+    content: 'Q';
+    position: absolute;
+    left: 0.6em;
+    bottom: 0.7em;
+    color: #003366;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.slide ul li:nth-of-type(3) .q::after {
+    bottom: 1em;
+}
+
+.slide ul li:nth-of-type(4) .q::after {
+    bottom: 1em;
+}
+
+
+.slide ul li:nth-of-type(7) .q::after {
+    bottom: 1em;
+}
+
+.slide ul li .a::after {
+    content: 'A';
+    position: absolute;
+    left: 0.7em;
+    bottom: 50%;
+    color: #003366;
+    font-weight: bold;
+    font-size: 1.69em;
+}
+
+.slide ul li:last-child {
+    border-bottom: 1px solid #003366;
+}
+
+.slide ul li span {
+    right: 0.3em;
+    bottom: 37%;
+    position: absolute;
+    font-size: 1.69em;
+    color: #666;
+
+}
