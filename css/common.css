@@ -1,0 +1,464 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* 모바일 코딩 필수 공통영역 */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    font-family: 'Nanum Gothic', 'Open Sans';
+}
+
+img,
+fieldset {
+    border: 0;
+    vertical-align: top
+}
+
+ul,
+ol,
+li,
+dl {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+hr {
+    display: none;
+}
+
+a {
+    color: inherit;
+}
+
+a,
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+em,
+i,
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+legend,
+caption {
+    display: none;
+    clear: both;
+}
+
+input,
+textarea,
+select,
+button,
+table {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+section,
+nav,
+article,
+aside,
+hgroup,
+header,
+footer {
+    display: block
+}
+
+textarea,
+input {
+    border-radius: 1px;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+.hidden,
+#skipNav {
+    display: block;
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff
+}
+
+
+/* 전체 공통 */
+.wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* 헤더영역 */
+#headerArea .header_top h1 a {
+    background: url(../images/mainlogo.png) 0 0 no-repeat;
+    background-size: cover;
+    background-size: 120px 37.5px;
+    width: 120px;
+    height: 50px;
+    background-position: 0 10px;
+    display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #headerArea .header_top h1 a {
+        background: url("../images/mainlogox2.png")0 0 no-repeat;
+        -webkit-background-size: 240px 75px;
+    }
+} */
+
+#headerArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    background: rgba(0, 0, 0, .5);
+}
+
+#headerArea .header_top {
+    overflow: hidden;
+}
+
+#headerArea h1 {
+    float: left;
+    font-size: 30px;
+}
+
+#headerArea h1 a {
+    color: #333;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#headerArea .menu_ham {
+    display: block;
+    float: right;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 30;
+}
+
+#headerArea .menu_ham span {
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    position: relative;
+    text-indent: -9999px;
+    display: block;
+    margin: 26px 15px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+#headerArea .menu_ham span::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+#headerArea .menu_ham span::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+/* 메뉴가 열렸을때 */
+#headerArea.mn_open .menu_ham span,
+#headerArea.mn_open .menu_ham span::before,
+#headerArea.mn_open .menu_ham span::after {
+    background: #fff
+}
+
+#headerArea.mn_open .menu_ham span {
+    background: rgba(0, 0, 0, 0);
+
+}
+
+#headerArea.mn_open .menu_ham span::before {
+    transform: rotate(45deg);
+    top: 0;
+
+}
+
+#headerArea.mn_open .menu_ham span::after {
+    transform: rotate(-45deg);
+    top: 0;
+
+}
+
+/* nav 영역*/
+#gnb {
+    position: absolute;
+    width: 100%;
+    right: -100%;
+    top: 0;
+    opacity: 0;
+    background: #fff;
+    z-index: 20
+}
+
+#gnb .bgtap {
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+#gnb h3 {
+    font-size: 1.25em;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#gnb h3 i {
+    float: right;
+    margin-right: 20px;
+}
+
+
+#gnb img {
+    width: 120px;
+    height: 38px;
+    padding: 10px;
+}
+
+#gnb .mainMenu {
+    padding: 20px;
+}
+
+#gnb li {
+    text-align: left;
+    margin-left: 15px;
+}
+
+#gnb li a {
+    display: block;
+    padding: 15px 0
+}
+
+#gnb li ul {
+    border-radius: 20px;
+    background: #f8f8f8;
+    padding: 10px;
+    display: none;
+}
+
+#gnb li ul li a {
+    font-size: 1.09em;
+}
+
+
+#gnb .sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+}
+
+
+#gnb .sns li a {
+    display: inline;
+}
+
+#gnb .sns li img {
+    float: left;
+    width: 33px;
+    height: 33px;
+}
+
+#gnb .etc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+#gnb .etc li {
+
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+#gnb .etc li:nth-of-type(1)::before {
+    content: '|';
+    position: absolute;
+    left: 110%;
+    top: 16px;
+}
+
+
+
+/* 푸터공통 */
+
+
+
+#footerArea .footerBox {
+    height: 260px;
+    background: rgba(153, 153, 153, 0.3);
+}
+
+#footerArea .footerBox .footerlogo {
+    background: url(../images/footerlogo.png) 0 0 no-repeat;
+    height: 60px;
+    width: 277px;
+    margin: 0 auto;
+    background-position: 0 20px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .footerlogo {
+        background: url("../images/footerlogo\ x2.png")0 0 no-repeat;
+        -webkit-background-size: 277px 40px;
+    }
+}
+
+#footerArea .footLink li {
+    margin-top: 10px;
+}
+
+#footerArea .footLink li a {
+    font-size: 0.68em;
+    float: left;
+    margin-right: 10px;
+    display: block;
+    letter-spacing: -1.5px;
+}
+
+#footerArea .footLink li:first-child a {
+    margin-left: 20px;
+}
+
+#footerArea .info {
+    font-size: 0.8em;
+    float: left;
+    margin: 20px 10px 0 20px;
+    display: block;
+    letter-spacing: -1.5px;
+    line-height: 2em;
+}
+
+#footerArea .family {
+    width: 277px;
+    position: relative;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+
+#footerArea .family a {
+    display: block;
+    background: #f1f0f0;
+    color: #333;
+    font-size: 0.94em;
+    padding: 5px;
+}
+
+
+
+#footerArea .family ul {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 277px;
+    display: none;
+}
+
+#footerArea .family ul a {
+    display: block;
+    padding: 20px 0 20px 20px;
+    background: #f8f8f8;
+    border-radius: 0;
+}
+
+
+
+#footerArea .family a i {
+    font-size: 19px;
+    margin-left: 150px;
+}
+
+
+#footerArea .footerBox .topMoveBox {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-left: 520px;
+    z-index: 100;
+}
+
+#footerArea .footerBox .topMoveBox a {
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/topMove.png)0 0 no-repeat #da291c;
+    transition: background .5s;
+}
